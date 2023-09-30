@@ -31,10 +31,10 @@ const Resume = () => {
           </Button>
         </div>
       )}
-      {data.showCursor && <Cursor />}
+      {data.showCursor }
       <div
         className={`container mx-auto mb-10 ${
-          data.showCursor && "cursor-none"
+          data.showCursor 
         }`}
       >
         <Header isBlog />

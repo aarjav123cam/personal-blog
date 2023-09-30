@@ -63,13 +63,13 @@ const Blog = ({ posts }) => {
   return (
     showBlog.current && (
       <>
-        {data.showCursor && <Cursor />}
+        {data.showCursor }
         <Head>
           <title>Blog</title>
         </Head>
         <div
           className={`container mx-auto mb-10 ${
-            data.showCursor && "cursor-none"
+            data.showCursor 
           }`}
         >
           <Header isBlog={true}></Header>

@@ -28,11 +28,11 @@ const BlogPost = ({ post }) => {
         <title>{"Blog - " + post.title}</title>
         <meta name="description" content={post.preview} />
       </Head>
-      {data.showCursor && <Cursor />}
+      {data.showCursor }
 
       <div
         className={`container mx-auto mt-10 ${
-          data.showCursor && "cursor-none"
+          data.showCursor 
         }`}
       >
         <Header isBlog={true} />
